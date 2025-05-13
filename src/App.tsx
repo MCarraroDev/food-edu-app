@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import FoodPyramid from './pages/FoodPyramid';
 import EnvironmentalImpact from './pages/EnvironmentalImpact';
 import SmartShopping from './pages/SmartShopping';
@@ -24,7 +24,7 @@ const App: React.FC = () => {
           <div className="nav-content">
             <h1 className="nav-title">Ed Civica - Alimentazione</h1>
             <div className="nav-links">
-              <NavLink to="/">Piramide Alimentare</NavLink>
+              <NavLink to="/pyramid">Piramide Alimentare</NavLink>
               <NavLink to="/impact">Impatto Ambientale</NavLink>
               <NavLink to="/shopping">Spesa smart</NavLink>
               <NavLink to="/menu">Menù Equilibrato (Beta)</NavLink>
@@ -34,7 +34,8 @@ const App: React.FC = () => {
 
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<FoodPyramid />} />
+            <Route path="/" element={<Navigate to="/pyramid" replace />} />
+            <Route path="/pyramid" element={<FoodPyramid />} />
             <Route path="/impact" element={<EnvironmentalImpact />} />
             <Route path="/shopping" element={<SmartShopping />} />
             <Route path="/menu" element={<MenuPlanner />} />

@@ -1,7 +1,7 @@
 {
   "name": "food-edu-app",
   "version": "1.0.0",
-  "description": "Educational app about nutrition and environmental impact",
+  "description": "App per educazione civica",
   "homepage": "https://mccarrarodev.github.io/food-edu-app",
   "main": "electron/main.js",
   "scripts": {
