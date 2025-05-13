@@ -18,7 +18,7 @@ const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) =>
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/food-edu-app">
       <div className="app-container bg-primary">
         <nav className="nav-bar">
           <div className="nav-content">
