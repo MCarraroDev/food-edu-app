@@ -1,5 +1,4 @@
-# EduNutrition App
-
+# Edu Food (educazione civica 2a superiore)
 Un'applicazione educativa per l'alimentazione sana e sostenibile.
 
 ## Caratteristiche
@@ -47,14 +46,6 @@ Per avviare l'applicazione in modalità sviluppo:
 
 ```bash
 npm run dev
-```
-
-## Build
-
-Per creare una build di produzione:
-
-```bash
-npm run build
 ```
 
 ## Colori
